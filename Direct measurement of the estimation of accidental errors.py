@@ -22,7 +22,7 @@ if data:
         length=len(data)
         total=0
         for i in range(length):
-            total=(data[i]-average)**2
+            total+=(data[i]-average)**2
         sigmax=math.sqrt(total/(length))
         sigmaxba = math.sqrt(total/(length*(length-1)))
         gi=(max_value-average)/(sigmaxba)
